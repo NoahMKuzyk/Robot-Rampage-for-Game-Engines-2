@@ -17,8 +17,8 @@ public class Ammo : MonoBehaviour
         tagToAmmo = new Dictionary<string, int>
         {
             { Constants.Pistol , pistolAmmo },
-            { Constants.Shotgun , shotgunAmmo },
             { Constants.AssaultRifle , assaultRifleAmmo },
+            { Constants.Shotgun , shotgunAmmo },  
         };
     }
 
@@ -35,7 +35,7 @@ public class Ammo : MonoBehaviour
     public bool HasAmmo(string tag)
     {
         if (!tagToAmmo.ContainsKey(tag))
-        {
+        { 
             Debug.LogError("Unrecognized gun type passed: " + tag);
         }
         return tagToAmmo[tag] > 0;
