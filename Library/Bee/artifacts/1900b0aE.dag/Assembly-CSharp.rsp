@@ -354,6 +354,7 @@
 "Assets/SampleScenes/Scripts/PlaceTargetWithMouse.cs"
 "Assets/SampleScenes/Scripts/SlowMoButton.cs"
 "Assets/Scripts/Constants.cs"
+"Assets/Scripts/GameUI.cs"
 "Assets/Scripts/GunEquipper.cs"
 -langversion:9.0
 
