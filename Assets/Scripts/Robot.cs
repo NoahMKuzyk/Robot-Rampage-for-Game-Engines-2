@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Robot : MonoBehaviour
 {
-
+    [SerializeField] GameObject missileprefab;
     [SerializeField] private string robotType;
     public int health;
     public int range;
@@ -49,6 +49,9 @@ public class Robot : MonoBehaviour
 
     private void fire()
     {
+        GameObject missile = Instantiate(missileprefab);
+        missile.transform.position = missileFireSpot.transform.position;
+        missile.transform.rotation = missileFireSpot.transform.rotation;
         robot.Play("Fire");
     }
 
