@@ -365,6 +365,7 @@
 "Assets/Scripts/Pistol.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/Robot.cs"
+"Assets/Scripts/RobotSpawn.cs"
 "Assets/Scripts/Shotgun.cs"
 -langversion:9.0
 
