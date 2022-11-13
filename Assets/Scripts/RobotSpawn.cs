@@ -21,4 +21,14 @@ public class RobotSpawn : MonoBehaviour
     {
         
     }
+
+    public void SpawnRobot()
+    {
+        timesSpawned++;
+        healthBonus += 1 * timesSpawned;
+        GameObject robot = Instantiate(robots[Random.Range(0, robots.Length)]);
+        robot.transform.position = transform.position;
+        robot.GetComponent<Robot>().health += healthBonus;
+    }
+
 }
