@@ -9,6 +9,18 @@ public class GameUI : MonoBehaviour
     [SerializeField] Sprite yellowReticle;
     [SerializeField] Sprite blueReticle;
     [SerializeField] Image reticle;
+
+    [SerializeField] private Text ammoText;
+    [SerializeField] private Text healthText;
+    [SerializeField] private Text armorText;
+    [SerializeField] private Text scoreText;
+    [SerializeField] private Text pickupText;
+    [SerializeField] private Text waveText;
+    [SerializeField] private Text enemyText;
+    [SerializeField] private Text waveClearText;
+    [SerializeField] private Text newWaveText;
+    [SerializeField] Player player;
+
     // Start is called before the first frame update
     void Start()
     {
